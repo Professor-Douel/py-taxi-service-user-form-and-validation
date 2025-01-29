@@ -11,7 +11,7 @@
     <ul>
       {% for car in car_list %}
         <li>
-          <a href="{% url "taxi:car-detail" pk=car.id %} " class="custom-btn">
+          <a href="{% url 'taxi:car-detail' pk=car.id %} " class="custom-btn">
             {{ car.id }}
           </a>
           {{ car.model }} ({{ car.manufacturer.name }})
